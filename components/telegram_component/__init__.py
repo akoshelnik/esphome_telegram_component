@@ -3,6 +3,8 @@ import esphome.config_validation as cv
 from esphome.components import text_sensor
 from esphome.const import CONF_ID
 
+CONF_TOKEN = "token"
+
 DEPENDENCIES = ['text_sensor']
 
 telegram_component_ns = cg.esphome_ns.namespace('telegram_component')

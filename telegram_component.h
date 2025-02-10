@@ -2,7 +2,7 @@
 
 #include "esphome.h"
 #include "esp_http_client.h"
-#include "cJSON.h"
+// #include "cJSON.h"
 
 class TelegramComponent : public Component {
  public:
@@ -35,6 +35,7 @@ class TelegramComponent : public Component {
                esp_http_client_get_content_length(client));
       ESP_LOGD("telegram", "Response: %s", response.c_str());
 
+     /*
       cJSON *json = cJSON_Parse(response.c_str());
       if (!json) {
         ESP_LOGE("telegram", "Failed to parse JSON response");
@@ -57,6 +58,7 @@ class TelegramComponent : public Component {
         }
         cJSON_Delete(json);
       }
+     */
     } else {
       ESP_LOGE("telegram", "HTTP POST request failed: %s", esp_err_to_name(err));
     }

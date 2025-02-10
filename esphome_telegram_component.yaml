@@ -3,4 +3,3 @@ external_component:
     - telegram_component
   libraries:
     - "ESP-IDF HTTP Client"
-    - "cJSON"

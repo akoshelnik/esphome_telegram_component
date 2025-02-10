@@ -4,6 +4,7 @@ from esphome.components import text_sensor
 from esphome.const import CONF_ID
 
 CONF_TOKEN = "token"
+CONF_TEXT_SENSOR = "text_sensor"
 
 DEPENDENCIES = ['text_sensor']
 
